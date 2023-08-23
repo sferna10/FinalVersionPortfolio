@@ -79,7 +79,7 @@ nav li a:hover {
   padding-right: 5%;
 }
 .background {
-  background-image: url(/Assets/images/texture-green.jpg);
+  background-image: url("/Assets/images/texture-green.jpg");
   background-position: center;
   background-size: cover;
 }
