@@ -340,6 +340,7 @@ header {
 @media screen and (max-width: 992px) {
   .card {
     width: 50%;
+    background: Yellow;
   }
   header {
     background: #772014;
