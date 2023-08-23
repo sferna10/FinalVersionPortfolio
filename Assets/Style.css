@@ -1,366 +1,365 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  nav {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  background-image: linear-gradient(green, rgb(1, 53, 1));
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.nav.logo p {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  color: rgb(248, 241, 241);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+nav ul {
+  float: right;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+nav li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 30px;
+  color: white;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: orangered;
+  transition: all 0.4 ease 0s;
+}
+.content {
+  min-height: 50%;
+  margin-top: 24px;
+}
+
+.tree {
+  height: 30%;
+  width: 30%;
+}
+.content-items img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+#menu-icon {
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+/*----------------------home page-------------------*/
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.background {
+  background-image: url(/Assets/images/texture-green.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.content {
+  margin-right: 0;
+  margin-left: 0;
+  min-height: 50vh;
+  padding-top: 5rem;
+  width: 100%;
+}
+/*--------------------About--------------------*/
+#about {
+  padding: 80px 0;
+  color: green;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 70%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600px;
+  color: #013d06;
+}
+/*---------------Work-----------------------*/
+
+#work {
+  color: #013e13;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work-col-1 {
+  flex-basis: 45%;
+}
+.work-col-1 img {
+  width: 80%;
+  border-radius: 15px;
+}
+.work-col-2 {
+  flex-basis: 0%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600px;
+  color: #013d06;
+}
+/*-------------------Contact-------------------*/
+.contact {
+  color: #013d06;
+}
+
+#Contact.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Contact-col-1 {
+  flex-basis: 55%;
+}
+.Contact-col-1 img {
+  width: 100px;
+  border-radius: 15px;
+}
+.Contact-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600px;
+  color: #013d06;
+}
+#Contact img {
+  width: 100px;
+  height: 50px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col- {
+  flex-basis: 35%;
+}
+.about-col-5 img {
+  width: 60%;
+  border-radius: 15px;
+  position: relative;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title1 {
+  font-size: 60px;
+  font-weight: 600px;
+  color: #013d06;
+}
+.sub-title {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.contact__mail {
+  position: relative;
+  background-color: aqua;
+  padding: 5rem 1.5rem 2.5rem;
+  margin-top: -2.5rem;
+  transition: background-color 0.4s;
+}
+.contact__title {
+  color: rgb(2, 57, 2);
+  font-size: var(--h2-font-size);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact img {
+  height: 100px;
+  width: 250%;
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.phone {
+  height: 100%;
+  width: 75%;
+}
+/*---------------------------------flexbox---------------------------*/
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
+}
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card img {
+  width: 50%;
+  min-width: 200px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  gap: 10px 20px;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+header {
+  padding: 60px;
+  text-align: center;
+  color: #fff;
+}
+.card {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  float: left;
+  width: 25%;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+.card img:hover {
+  background: transparent;
+  border: 2px solid rgb(230, 87, 39);
+  transform: translateX (8px);
+}
+@media (max-width: 1535px) {
+  header {
     width: 100%;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 75px;
-    padding: 0px 100px;
-    position: fixed;
-    background-image: linear-gradient(green, rgb(1, 53, 1));
+    color: rgb(214, 214, 231);
+    padding: 15px 3%;
+    transition: 0.2;
   }
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: aliceblue;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    cursor: pointer;
+}
+@media (max-width: 1460px) {
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
   }
-  .nav.logo p {
-    font-size: 30px;
-    font-weight: bold;
-    float: left;
-    color: rgb(248, 241, 241);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-  }
-  nav ul {
-    float: right;
-  }
-  nav li {
-    display: inline-block;
-    list-style: none;
-  }
-  nav li a {
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 0px 30px;
-    color: white;
-    text-decoration: none;
-  }
-  nav li a:hover {
-    color: orangered;
-    transition: all 0.4 ease 0s;
-  }
-  .content {
-    min-height: 50%;
-    margin-top: 24px;
-  }
-  
-  .tree {
-    height: 30%;
-    width: 30%;
-  }
-  .content-items img {
+}
+@media (max-width: 1340px) {
+  hero-img img {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+    height: auto;
   }
-  #menu-icon {
-    color: white;
-    font-size: 35px;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
+}
+@media (max-width: 1195px) {
+  section {
+    padding: 0 3%;
+    transition: 0.2s;
   }
-  /*----------------------home page-------------------*/
-  .container {
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+}
+@media screen and(max-width: 765px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
   }
-  .background {
-    background-image: url("../images/texture-green.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-  .content {
-    margin-right: 0;
-    margin-left: 0;
-    min-height: 50vh;
-    padding-top: 5rem;
-    width: 100%;
-  }
-  /*--------------------About--------------------*/
-  #about {
-    padding: 80px 0;
-    color: green;
-  }
-  .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .about-col-1 {
-    flex-basis: 35%;
-  }
-  .about-col-1 img {
-    width: 70%;
-    border-radius: 15px;
-  }
-  .about-col-2 {
-    flex-basis: 60%;
-  }
-  .sub-title {
-    font-size: 60px;
-    font-weight: 600px;
-    color: #013d06;
-  }
-  /*---------------Work-----------------------*/
-  
-  #work {
-    color: #013e13;
-  }
-  .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .work-col-1 {
-    flex-basis: 45%;
-  }
-  .work-col-1 img {
-    width: 80%;
-    border-radius: 15px;
-  }
-  .work-col-2 {
-    flex-basis: 0%;
-  }
-  .sub-title {
-    font-size: 60px;
-    font-weight: 600px;
-    color: #013d06;
-  }
-  /*-------------------Contact-------------------*/
-  .contact{
-    color:#013d06
-  }
-  
-  #Contact.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .Contact-col-1 {
-    flex-basis: 55%;
-  }
-  .Contact-col-1 img {
-    width: 100px;
-    border-radius: 15px;
-  }
-  .Contact-col-2 {
-    flex-basis: 60%;
-  }
-  .sub-title {
-    font-size: 60px;
-    font-weight: 600px;
-    color: #013d06;
-  }
-  #Contact img {
-    width: 100px;
-    height: 50px;
-  }
-  .row2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .about-col- {
-    flex-basis: 35%;
-  }
-  .about-col-5 img {
-    width: 60%;
-    border-radius: 15px;
-    position: relative;
-  }
-  .about-col-2 {
-    flex-basis: 60%;
-  }
-  .sub-title1 {
-    font-size: 60px;
-    font-weight: 600px;
-    color: #013d06;
-  }
-  .sub-title {
-    display: flex;
-    margin: 20px 0 40px;
-  }
-  
-  .contact__mail {
-    position: relative;
-    background-color: aqua;
-    padding: 5rem 1.5rem 2.5rem;
-    margin-top: -2.5rem;
-    transition: background-color 0.4s;
-  }
-  .contact__title {
-    color: rgb(2, 57, 2);
-    font-size: var(--h2-font-size);
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  .contact img {
-    height: 100px;
-    width: 250%;
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .phone {
-    height: 100%;
-    width: 75%;
-  }
-  /*---------------------------------flexbox---------------------------*/
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  main {
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
-  
-  .main-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 60px;
-    background: #13293d;
-    color: #fff;
-  }
+}
+.flex-item:first-child {
+  min-height: 150px;
+}
+.icons {
+  display: none;
+}
+.scroll-down {
+  display: none;
+}
+@media screen and (max-width: 992px) {
   .card {
-    flex: 1 0 0;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  .card header {
-    padding: 20px;
-    background: #13293d;
-    color: #fff;
-  }
-  
-  .card img {
     width: 50%;
-    min-width: 200px;
-  }
-  
-  .container {
-    display: flex;
-    gap: 10px;
-    gap: 10px 20px;
-    row-gap: 10px;
-    column-gap: 20px;
   }
   header {
-    padding: 60px;
-    text-align: center;
-    color: #fff;
+    background: #772014;
   }
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    float: left;
-    width: 25%;
-  }
-  
-  .card header {
-    padding: 20px;
-  }
-  
-  .card p {
-    text-align: center;
-  }
-  
-  .card img {
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
     width: 100%;
-  }
-  .card img:hover {
-    background: transparent;
-    border: 2px solid rgb(230, 87, 39);
-    transform: translateX (8px);
-  }
-  @media (max-width: 1535px) {
-    header {
-      width: 100%;
-      color: rgb(214, 214, 231);
-      padding: 15px 3%;
-      transition: 0.2;
+    .header {
+      background: rgb(161, 222, 38);
     }
   }
-  @media (max-width: 1460px) {
-    section {
-      padding: 0 12%;
-      transition: 0.2s;
-    }
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+@media (max-width: 680px) {
+  .hero-img img {
+    width: 100vw;
   }
-  @media (max-width: 1340px) {
-    hero-img img {
-      width: 100%;
-      height: auto;
-    }
-  }
-  @media (max-width: 1195px) {
-    section {
-      padding: 0 3%;
-      transition: 0.2s;
-    }
-  }
-  @media screen and(max-width: 765px) {
-    .flex-item,
-    .flex-item:first-child {
-      flex-basis: 100%;
-    }
-  }
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-  .icons {
-    display: none;
-  }
-  .scroll-down {
-    display: none;
-  }
-  @media screen and (max-width: 992px) {
-    .card {
-      width: 50%;
-    }
-    header {
-      background: #772014;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-      width: 100%;
-      .header {
-        background: rgb(161, 222, 38);
-      }
-    }
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  
-  @media (max-width: 680px) {
-    .hero-img img {
-      width: 100vw;
-    }
-  }
-  
+}
