@@ -79,7 +79,7 @@ nav li a:hover {
   padding-right: 5%;
 }
 .background {
-  background-image: url(/Assets/images/kseniya-lapteva-K0wseIXrs3I-unsplash.jpg);
+  background: rgb(27, 172, 27)
   background-position: center;
   background-size: cover;
 }
