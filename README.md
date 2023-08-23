@@ -17,6 +17,8 @@ The project's code is HTML, JavaScript, and CSS, and it is trying to apply links
 
 ##Screenshots
 
+https://drive.google.com/file/d/1W3FGCxy8oPsqtBu8UmOfZiNhZUtLicL6/view
+
 ##Tech/Framework used
 
 This is used to help the reader understand which tech or frameworks have been used to do the project. It enables the reader to understand which all tech stack he has to be familiar with to understand the whole project.
